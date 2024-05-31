@@ -49,6 +49,7 @@ typedef enum {
     SIG_SETUP_VIEW_TILE_NEXT,
     SIG_SETUP_VIEW_TILE_UP,
     SIG_SETUP_VIEW_TILE_DOWN,
+    SIG_SETUP_SHOW_TON_MNEMONIC_HINT,
     SIG_SETUP_VIEW_BUTT,
 
     SIG_CREATE_SHARE_VIEW_NEXT_SLICE = SIG_SETUP_VIEW_BUTT + 50,
@@ -244,5 +245,6 @@ void *GuiCreateErrorCodeWindow(int32_t errCode, lv_obj_t **param, ErrorWindowCal
 void *GuiCreateRustErrorWindow(int32_t errCode, const char* errMessage, lv_obj_t **param, ErrorWindowCallback cb);
 void GuiSDCardExportHandler(lv_event_t *e);
 void CreateBetaNotice(void);
+void GuiWriteSESetTon(bool isTon);
 
 #endif /* _GUI_VIEWS_H */
